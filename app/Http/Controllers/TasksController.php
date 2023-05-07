@@ -16,7 +16,6 @@ class TasksController extends Controller
     public function index()
     {
         $tasks = Task::all();
-        
         return view("tasks.index", [
             "tasks" => $tasks,
         ]);
@@ -30,7 +29,6 @@ class TasksController extends Controller
     public function create()
     {
         $task = new Task;
-        
         return view("tasks.create", [
             "task" => $task,   
         ]);
