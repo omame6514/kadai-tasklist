@@ -13,6 +13,9 @@
     @endif
     
     {!! Form::model($task, ["route" => "tasks.store"]) !!}
+        {!! Form::label("status", "進行状況:") !!}
+        {!! Form::text("status") !!}
+        
         {!! Form::label("content", "タスク:") !!}
         {!! Form::text("content") !!}
         
